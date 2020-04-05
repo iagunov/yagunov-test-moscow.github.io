@@ -160,10 +160,10 @@ footer {
     height: 50px;
     border-color: transparent;
     border-radius: 50%;
-    background-color: black;
+    /* background-color: black; */
     display: none;
 }
-
+/* 
 .back-to-top:hover,
 .back-to-top:focus {
     filter: brightness(1.5);
@@ -193,7 +193,7 @@ footer {
     transform: translate(-50%, -75%) rotate(45deg);
     border-top: 5px solid #f5f0f6;
     border-left: 5px solid #f5f0f6;
-}
+} */
 
 
 
