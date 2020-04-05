@@ -80,7 +80,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript">$(window).on('load', function () {
@@ -89,6 +89,27 @@
       $svg_anm.fadeOut();
       $preloader.delay(500).fadeOut('slow');
     });</script>
+
+    <script>
+      function backToTop() {
+        let button = $('.back-to-top');
+
+        $(window).on('scroll', () => {
+            if ($(this).scrollTop() >= 50) {
+                button.fadeIn();
+            } else {
+                button.fadeOut();
+            }
+        });
+
+        button.on('click', (e) => {
+            e.preventDefault();
+            $('html').animate({scrollTop: 0}, 1000);
+        })
+      }
+
+      backToTop();
+    </script>  
 
 </body>
 </html>
