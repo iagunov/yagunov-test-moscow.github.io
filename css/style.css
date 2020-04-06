@@ -195,6 +195,77 @@ footer {
     border-left: 5px solid #f5f0f6;
 } */
 
+.heart {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	-webkit-transform: rotate(45deg);  /* для Chrome и Safari */
+	-moz-transform: rotate(45deg); /* для Firefox */ 
+	-o-transform: rotate(45deg); /* для Opera */ 
+	transform: rotate(45deg);
+	border: solid 1px #d6ba2e;
+	border-top: none;
+    border-left: none;
+    background: #d6ba2e;
+}
+
+.heart:before, .heart:after {
+	position:absolute;
+	content: ' ';
+	-webkit-border-radius: 50px 0 0 50px;
+	-moz-border-radius: 50px 0 0 50px;
+	border-radius: 50px 0 0 50px;
+	width: 30px;
+	height: 50px;
+	border: solid 1px #d6ba2e;
+	border-right: none;
+    left:-30px;
+    background: #d6ba2e;
+}
+.heart:after {
+	position: absolute;
+	left: 10px;
+	top: -40px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    background: #d6ba2e;
+}
+
+.heart {
+	animation-name: 'anime';
+	animation-duration: 300ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}
+
+@keyframes 'anime' {
+	from {
+		transform: scale(1) rotate(45deg);
+	}
+	to {
+		transform: scale(1.1) rotate(45deg);
+	}
+}
+
+.heart {
+	-webkit-animation-name: 'anime';
+	-webkit-animation-duration: 1000ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes 'anime' {
+	from {
+		-webkit-transform: scale(1) rotate(45deg);
+	}
+	to {
+		-webkit-transform: scale(1.1) rotate(45deg);
+	}
+}
+
 
 
 
