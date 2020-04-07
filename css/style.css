@@ -16,8 +16,14 @@ body {
     }
 }
 
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 55px;
+}
 
-h1,h2 {
+h2 {
     color: white;
     text-align: center;
     margin-top: 50px;
@@ -70,7 +76,7 @@ a {
     right:0;
     bottom:0;
     background: #4e34b5;
-    z-index: 30;}
+    z-index: 50;}
      
     .contpre small{font-size:25px;}
      
@@ -86,13 +92,6 @@ a {
     letter-spacing:-2px;
     text-align:center;
     line-height:35px;}
-     
-    #p_prldr .svg_anm {
-    position: absolute;
-    width: 41px;
-    height: 41px;
-    background-size:41px;    
-    margin: -16px 0 0 -16px;}
 
 header .navbar {
     padding: 40px 0;
@@ -248,6 +247,45 @@ footer {
 	}
 }
 
+body {
+    margin: 0;
+    background-color: #4e34b5;
+  }
+  
+  .section {
+    perspective: 1000px;
+  }
+  
+  .i-container {
+    height: 100vh;
+    width: 380px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transform: rotateX(55deg) rotateZ(-45deg) rotateY(10deg);
+    transform-style: preserve-3d;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .i-card {
+    width: 100px;
+    margin: 5px;
+    transition: 0.3s;
+  }
+  
+  .i-card:hover {
+    cursor: pointer;
+    transform: translateZ(10px);
+  }
+
+
 
 
 
@@ -319,7 +357,7 @@ footer {
     h2 {
         font-size: 35px;
     }
-    .card {
+    .col-md-6.card {
         padding: 0px;
         min-height: min-content;
     }
@@ -327,9 +365,20 @@ footer {
         padding: 20px;
         min-height: min-content;
     }
-    .card-body {
-        min-height: min-content; 
+    .web-icon {
+        height: 70px;
+        width: 70px;
     }
+    .i-card {
+        width: 45px;
+    }
+    .card-top {
+        margin-top: 200px;
+    }
+    h1 {
+        margin-bottom: 100px;
+    }
+
     
 }
 
